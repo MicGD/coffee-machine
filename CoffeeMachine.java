@@ -10,21 +10,12 @@ public class CoffeeMachine {
         Scanner s = new Scanner(System.in);
 
 
-        int waterAmount = 400;
-        int milkAmount = 540;
-        int beanAmount = 120;
-        int cupAmount = 9;
-        int moneyAmount = 550;
-
-        int fillWater = 0;
-        int fillMilk = 0;
-        int fillBeans = 0;
-        int fillCups = 0;
+        int waterAmount = 400, milkAmount = 540, beanAmount = 120, cupAmount = 9, moneyAmount = 550;
+        int fillWater = 0, fillMilk = 0, fillBeans = 0, fillCups = 0;
 
         int takeCase = 0;
 
         boolean exitBoolean = false;
-
 
         String actionList = "Write action (buy, fill, take, remaining, exit):";
         String machineHas = "The coffee machine has:";
@@ -33,9 +24,9 @@ public class CoffeeMachine {
         String writeBeans = "Write how many grams of coffee beans do you want to add:";
         String writeCups = "Write how many disposable cups of coffee do you want to add:";
         String notEnoughWater = "Sorry, not enough water!";
+        String enoughResources = "I have enough resources, making you a coffee!";
         String action1;
         String action2;
-
 
         while (!exitBoolean) {
             System.out.println(actionList);
@@ -152,6 +143,5 @@ public class CoffeeMachine {
             }
         }
     }
-
 }
 
